@@ -5,6 +5,7 @@ phases:
     runtime-versions:
       java: openjdk11
       docker: 18
+  pre_build:    
     commands:
       - sudo apt-get -y update
       - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
